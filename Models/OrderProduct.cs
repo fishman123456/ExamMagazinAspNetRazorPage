@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace ExamMagazinAspNetRazorPage.Models
 {
     // Таблица для связи товары - заказы
-    public class ShopingCart
+    public class OrderProduct
     {
         // id для базы данных
         [Column("IdOrderProduct_f")]
@@ -13,7 +13,7 @@ namespace ExamMagazinAspNetRazorPage.Models
         [Column("QuantityOrderProduct_f")]
         public int Quantity { get; set; }
 
-       
+
         [JsonIgnore]
         public Order? Order { get; set; }
         public Product? Product { get; set; }

@@ -4,16 +4,19 @@ using ExamMagazinAspNetRazorPage.Storage;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace ExamMagazinAspNetRazorPage.Migrations
+namespace ExamMagazinAspNetRazorPage.DB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241006093146_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -90,39 +93,7 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                     b.ToTable("Orders_t");
                 });
 
-            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("IdProduct_f");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("NameProduct_f");
-
-                    b.Property<string>("Number")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("NumberProduct_f");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)")
-                        .HasColumnName("PriceUnitProduct_f");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int")
-                        .HasColumnName("QuantityProduct_f");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Products_t");
-                });
-
-            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.ShopingCart", b =>
+            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.OrderProduct", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -147,7 +118,39 @@ namespace ExamMagazinAspNetRazorPage.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ShopingCarts_t");
+                    b.ToTable("OrderProduct_t");
+                });
+
+            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("IdProduct_f");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("NameProduct_f");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("NumberProduct_f");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float")
+                        .HasColumnName("PriceUnitProduct_f");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int")
+                        .HasColumnName("QuantityProduct_f");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products_t");
                 });
 
             modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.Client", b =>
@@ -159,14 +162,14 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.ShopingCart", b =>
+            modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.OrderProduct", b =>
                 {
                     b.HasOne("ExamMagazinAspNetRazorPage.Models.Order", "Order")
-                        .WithMany("shopingCarts")
+                        .WithMany("OrderProducts")
                         .HasForeignKey("OrderId");
 
                     b.HasOne("ExamMagazinAspNetRazorPage.Models.Product", "Product")
-                        .WithMany("ShopingCarts")
+                        .WithMany("OrderProducts")
                         .HasForeignKey("ProductId");
 
                     b.Navigation("Order");
@@ -176,12 +179,12 @@ namespace ExamMagazinAspNetRazorPage.Migrations
 
             modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.Order", b =>
                 {
-                    b.Navigation("shopingCarts");
+                    b.Navigation("OrderProducts");
                 });
 
             modelBuilder.Entity("ExamMagazinAspNetRazorPage.Models.Product", b =>
                 {
-                    b.Navigation("ShopingCarts");
+                    b.Navigation("OrderProducts");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Net.Mail;
 using System.Text.Json.Serialization;
@@ -7,7 +8,7 @@ namespace ExamMagazinAspNetRazorPage.Models
 {
     [Index(nameof(СodeOrder), IsUnique = true)]
     public class Order
-    {   
+    {
         [Column("IdOrder_f")]
         public int Id { get; set; }
         [Column("СodeOrder_f")]
@@ -15,10 +16,10 @@ namespace ExamMagazinAspNetRazorPage.Models
         [Column("CreatationDate")]
         public DateTime CreatationDate { get; set; } = DateTime.Now;
         [Column("ClientOrder_f")]
-        public string Client  { get; set; }
-        
+        public string Client { get; set; }
+
         [JsonIgnore]
-        public ICollection<ShopingCart>? shopingCarts { get; set; }
+        public ICollection<OrderProduct>? OrderProducts { get; set; }
         public Order()
         {
             Client = string.Empty;

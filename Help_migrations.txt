@@ -27,6 +27,9 @@ app.MapGet("ping", () => new StringMessage(message: "pong"));
 // 2. Создать класс сущности и класс ApplicationDbContext, настроить подключение к БД (можно через конфиги)
 // 3. Создать и применить миграцию (Add-Migration Init -OutputDir ./DB/Migrations; Update-Database)
 
+
+// Удалить миграцию Remove-Migration
+
 // ВАРИАНТЫ: 
 // Книги
 // Электротранзисторы

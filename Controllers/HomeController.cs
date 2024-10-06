@@ -3,7 +3,6 @@ using ExamMagazinAspNetRazorPage.Models;
 using Microsoft.AspNetCore.Mvc;
 
 using System.Diagnostics;
-using ExamMagazinAspNetRazorPage.Models;
 
 namespace ExamMagazinAspNetRazorPage.Controllers
 {

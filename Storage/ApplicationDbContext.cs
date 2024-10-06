@@ -12,7 +12,7 @@ namespace ExamMagazinAspNetRazorPage.Storage
         // создаём таблицу заказов
         public DbSet<Order> Orders_t { get; set; }
         // создаём таблицу связи клиентов закзазов
-        public DbSet<ShopingCart> ShopingCarts_t { get; set; }
+        public DbSet<OrderProduct> OrderProduct_t { get; set; }
         // создаём таблицу продуктов
         public DbSet<Product> Products_t { get; set; }
 

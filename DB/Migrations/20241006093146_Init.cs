@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ExamMagazinAspNetRazorPage.Migrations
+namespace ExamMagazinAspNetRazorPage.DB.Migrations
 {
     /// <inheritdoc />
     public partial class Init : Migration
@@ -35,7 +35,7 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                     NumberProduct_f = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NameProduct_f = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     QuantityProduct_f = table.Column<int>(type: "int", nullable: false),
-                    PriceUnitProduct_f = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    PriceUnitProduct_f = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,7 +64,7 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ShopingCarts_t",
+                name: "OrderProduct_t",
                 columns: table => new
                 {
                     IdOrderProduct_f = table.Column<int>(type: "int", nullable: false)
@@ -75,14 +75,14 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ShopingCarts_t", x => x.IdOrderProduct_f);
+                    table.PrimaryKey("PK_OrderProduct_t", x => x.IdOrderProduct_f);
                     table.ForeignKey(
-                        name: "FK_ShopingCarts_t_Orders_t_OrderId",
+                        name: "FK_OrderProduct_t_Orders_t_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders_t",
                         principalColumn: "IdOrder_f");
                     table.ForeignKey(
-                        name: "FK_ShopingCarts_t_Products_t_ProductId",
+                        name: "FK_OrderProduct_t_Products_t_ProductId",
                         column: x => x.ProductId,
                         principalTable: "Products_t",
                         principalColumn: "IdProduct_f");
@@ -100,20 +100,20 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                 column: "OrderId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderProduct_t_OrderId",
+                table: "OrderProduct_t",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderProduct_t_ProductId",
+                table: "OrderProduct_t",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Orders_t_СodeOrder_f",
                 table: "Orders_t",
                 column: "СodeOrder_f",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ShopingCarts_t_OrderId",
-                table: "ShopingCarts_t",
-                column: "OrderId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_ShopingCarts_t_ProductId",
-                table: "ShopingCarts_t",
-                column: "ProductId");
         }
 
         /// <inheritdoc />
@@ -123,7 +123,7 @@ namespace ExamMagazinAspNetRazorPage.Migrations
                 name: "Clients_t");
 
             migrationBuilder.DropTable(
-                name: "ShopingCarts_t");
+                name: "OrderProduct_t");
 
             migrationBuilder.DropTable(
                 name: "Orders_t");

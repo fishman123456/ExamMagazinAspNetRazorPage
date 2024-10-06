@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
@@ -11,13 +12,13 @@ namespace ExamMagazinAspNetRazorPage.Models
         public int Id { get; set; }
 
         [Column("ClientName_f")]
-        public string Name { get; set; }
+        public string ?Name { get; set; }
 
         [Column("ClientLast_f")]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         [Column("ClientEmail_f")]
-        public string Email { get; set; }
+        public string ?Email { get; set; }
 
         // связь с таблицей заказы
         [JsonIgnore]

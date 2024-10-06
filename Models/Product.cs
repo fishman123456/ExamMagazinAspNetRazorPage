@@ -20,11 +20,11 @@ namespace ExamMagazinAspNetRazorPage.Models
         public int Quantity { get; set; }
         // цена за еденицу товара
         [Column("PriceUnitProduct_f")]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
 
         [JsonIgnore]
-        public ICollection<ShopingCart>? ShopingCarts { get; set; }
+        public ICollection<OrderProduct>? OrderProducts { get; set; }
         public Product()
         {
             Number = string.Empty;
