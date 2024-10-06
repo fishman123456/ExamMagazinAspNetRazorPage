@@ -1,0 +1,84 @@
+﻿
+
+using DbASP_NET_11_03_2024.DB;
+
+using Microsoft.EntityFrameworkCore;
+
+using static DbASP_NET_11_03_2024.ApiMessage.CommonMessages;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// 2. конфигурация билдера
+// добавление DbContext в сервисы
+builder.Services.AddDbContext<ApplicationDbContext>();
+
+var app = builder.Build();
+
+app.MapGet("", () => new StringMessage(message: "server is running"));
+app.MapGet("ping", () => new StringMessage(message: "pong"));
+
+// Create Read Update Delete (CRUD)
+
+// План интеграции EF и БД MS SQL Server в проект:
+// 0. Создать и подготовить проект ASP.NET
+// 1. Установить необходимые пакеты .NET:
+//  - Microsoft.EntityFrameworkCore.SqlServer
+//  - Microsoft.EntityFrameworkCore.Tools
+// 2. Создать класс сущности и класс ApplicationDbContext, настроить подключение к БД (можно через конфиги)
+// 3. Создать и применить миграцию (Add-Migration Init -OutputDir ./DB/Migrations; Update-Database)
+
+// ВАРИАНТЫ: 
+// Книги
+// Электротранзисторы
+// Блюда в кафе с указанием БЖУ
+// Фильмы
+// Компьютерные игры
+// Автомобили
+// 1. добавление новой записи в БД
+app.MapPost("transistor", async (Transistors transistoris, ApplicationDbContext db) =>
+{
+    db.Add(transistoris);
+    await db.SaveChangesAsync();
+    return transistoris;
+});
+
+// 2. получние всех записей
+app.MapGet("transistor", async (ApplicationDbContext db) =>
+{
+    return await db.Transistors.ToListAsync();
+});
+
+// 3. получение по записи по id
+app.MapGet("transistor/{id:int}", async (int id, ApplicationDbContext db) =>
+{
+    return await db.Transistors.FirstOrDefaultAsync(mi => mi.Id == id);
+});
+
+// 4. удаление по id
+app.MapDelete("transistor/{id:int}", async (int id, ApplicationDbContext db) =>
+{
+    Transistors? deleted = await db.Transistors.FirstOrDefaultAsync(mi => mi.Id == id); // найдем удаляемый объект
+    if (deleted != null)
+    {
+        db.Transistors.Remove(deleted); // если он есть, то удалим его
+        await db.SaveChangesAsync();
+    }
+    return deleted; // вернем удаляемый объект
+});
+
+// 5. обновление по id
+app.MapPost("transistor/{id:int}", async (int id, Transistors transistoris, ApplicationDbContext db) =>
+{
+    Transistors? updated = await db.Transistors.FirstOrDefaultAsync(mi => mi.Id == id); // найдем обновляемый объект
+    if (updated != null)
+    {
+        // обновить поля объекта из БД и сохранить
+        updated.Description = transistoris.Description;
+        updated.Price = transistoris.Price;
+        updated.Quantity = transistoris.Quantity;
+        await db.SaveChangesAsync();
+    }
+    return updated; // вернем обновляемый объект
+});
+
+app.Run();
