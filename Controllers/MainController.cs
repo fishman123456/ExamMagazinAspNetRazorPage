@@ -21,7 +21,7 @@ namespace AspNetWebApi_order_product.Controllers
         [HttpGet("ping")]
         public StringMessage Ping()
         {
-            return new StringMessage(message: "pong");
+            return new StringMessage(message: "pong - magazin");
         }
     }
 }

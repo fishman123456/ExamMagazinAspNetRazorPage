@@ -1,14 +1,16 @@
 using ExamMagazinAspNetRazorPage.Models;
 using ExamMagazinAspNetRazorPage.Controllers;
 using ExamMagazinAspNetRazorPage.Storage;
+using ExamMagazinAspNetRazorPage.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddControllers();
-builder.Services.AddRazorPages();
+builder.Services.AddControllers();                                  // добавление классов контроллеров в IoC-контейнер
 builder.Services.AddDbContext<ApplicationDbContext>();              // добавим DbContext
+builder.Services.AddTransient<IOrderService, RdbOrderService>();
+builder.Services.AddTransient<IProductService, RdbProductService>();
+builder.Services.AddTransient<IOrderProductService, RdbOrderProductService>();
+builder.Services.AddRazorPages();
 
 
 var app = builder.Build();
