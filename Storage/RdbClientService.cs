@@ -46,6 +46,8 @@ namespace ExamMagazinAspNetRazorPage.Storage
             Client? updated = await _db.Clients_t.FirstOrDefaultAsync(client => client.Id == id);
             if (updated != null)
             {
+                updated.Name = client.Name;
+                updated.LastName = client.LastName;
                 updated.Email = client.Email;
                 await _db.SaveChangesAsync();
             }

@@ -10,6 +10,7 @@ builder.Services.AddDbContext<ApplicationDbContext>();              // добавим D
 builder.Services.AddTransient<IOrderService, RdbOrderService>();
 builder.Services.AddTransient<IProductService, RdbProductService>();
 builder.Services.AddTransient<IOrderProductService, RdbOrderProductService>();
+builder.Services.AddTransient<IClientService, RdbClientService>();
 builder.Services.AddRazorPages();
 
 

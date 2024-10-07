@@ -57,7 +57,7 @@ namespace ExamMagazinAspNetRazorPage.Controllers
             return client;
         }
 
-        [HttpPatch("{id:int}")]
+        [HttpPost("{id:int}")]
         public async Task<Client?> UpdateById(int id, Client client)
         {
             Client? updated = await _clientService.UpdateById(id, client);

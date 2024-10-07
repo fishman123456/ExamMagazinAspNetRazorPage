@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\",
+  "WorkspaceRootPath": "D:\\Github\\ExamMagazinAspNetRazorPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\storage\\rdbproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:storage\\rdbproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\storage\\rdbclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\storage\\rdborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:storage\\rdborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\storage\\rdborderproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:storage\\rdborderproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\storage\\rdbclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:storage\\rdbclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\storage\\rdborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:storage\\rdborderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|d:\\github\\exammagazinaspnetrazorpage\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 253,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,19 +46,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -62,45 +74,101 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "Controllers\\ClientController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDwAAABEAAAAAAAAAA==",
+              "Title": "RdbProductService.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbProductService.cs",
+              "RelativeDocumentMoniker": "Storage\\RdbProductService.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbProductService.cs",
+              "RelativeToolTip": "Storage\\RdbProductService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T10:14:36.074Z",
+              "WhenOpened": "2024-10-07T15:52:27.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RdbClientService.cs",
-              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Storage\\RdbClientService.cs",
-              "RelativeDocumentMoniker": "Storage\\RdbClientService.cs",
-              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Storage\\RdbClientService.cs",
-              "RelativeToolTip": "Storage\\RdbClientService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowCwAAAAzAAAAAAAAAA==",
+              "Title": "RdbOrderService.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderService.cs",
+              "RelativeDocumentMoniker": "Storage\\RdbOrderService.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderService.cs",
+              "RelativeToolTip": "Storage\\RdbOrderService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAA4wDoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T10:04:03.203Z",
+              "WhenOpened": "2024-10-07T15:51:49.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RdbOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderService.cs",
-              "RelativeDocumentMoniker": "Storage\\RdbOrderService.cs",
-              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderService.cs",
-              "RelativeToolTip": "Storage\\RdbOrderService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAmwD0AAAAbAAAAAAAAAA==",
+              "Title": "RdbOrderProductService.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderProductService.cs",
+              "RelativeDocumentMoniker": "Storage\\RdbOrderProductService.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbOrderProductService.cs",
+              "RelativeToolTip": "Storage\\RdbOrderProductService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA0wDAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T09:50:26.536Z",
+              "WhenOpened": "2024-10-07T15:51:10.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RdbClientService.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbClientService.cs",
+              "RelativeDocumentMoniker": "Storage\\RdbClientService.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Storage\\RdbClientService.cs",
+              "RelativeToolTip": "Storage\\RdbClientService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA0wDEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:49:47.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderProductController.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\OrderProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderProductController.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\OrderProductController.cs",
+              "RelativeToolTip": "Controllers\\OrderProductController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:49:29.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwD0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:49:03.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
+              "ToolTip": "D:\\Github\\ExamMagazinAspNetRazorPage\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Controllers\\ClientController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T15:46:42.966Z",
               "EditorCaption": ""
             }
           ]

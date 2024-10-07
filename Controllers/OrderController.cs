@@ -59,7 +59,7 @@ namespace ExamMagazinAspNetRazorPage.Controllers
                 return order;
             }
 
-            [HttpPatch("{id:int}")]
+            [HttpPost("{id:int}")]
             public async Task<Order?> UpdateById(int id, Order order)
             {
                 Order? updated = await _orderService.UpdateById(id, order);
