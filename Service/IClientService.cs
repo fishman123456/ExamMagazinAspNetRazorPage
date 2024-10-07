@@ -2,7 +2,7 @@
 
 namespace ExamMagazinAspNetRazorPage.Service
 {
-    public interface IClient
+    public interface IClientService
     {
         Task<Client?> Add(Client client);
 
