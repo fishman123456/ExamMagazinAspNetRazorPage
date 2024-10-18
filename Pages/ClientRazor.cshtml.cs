@@ -20,3 +20,4 @@ namespace ExamMagazinAspNetRazorPage.Pages
         }
     }
 }
+//https://learningprogramming.net/net/asp-net-core-razor-pages/build-shopping-cart-with-session-in-asp-net-core-razor-pages/

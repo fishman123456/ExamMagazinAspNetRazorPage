@@ -23,7 +23,7 @@ namespace ExamMagazinAspNetRazorPage.Models
         public double Price { get; set; }
 
 
-        [JsonIgnore]
+       // [JsonIgnore]
         public ICollection<OrderProduct>? OrderProducts { get; set; }
         public Product()
         {

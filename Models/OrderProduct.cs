@@ -14,7 +14,7 @@ namespace ExamMagazinAspNetRazorPage.Models
         public int Quantity { get; set; }
 
 
-        [JsonIgnore]
+        //[JsonIgnore]
         public Order? Order { get; set; }
         public Product? Product { get; set; }
         public override string ToString()

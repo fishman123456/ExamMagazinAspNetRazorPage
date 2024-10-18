@@ -21,9 +21,9 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
-//app.UseStaticFiles();
+app.UseStaticFiles();
 app.UseRouting();
-//app.UseAuthorization();
+app.UseAuthorization();
 app.MapControllers();
 
 

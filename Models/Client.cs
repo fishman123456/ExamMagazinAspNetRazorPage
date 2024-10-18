@@ -21,7 +21,7 @@ namespace ExamMagazinAspNetRazorPage.Models
         public string ?Email { get; set; }
 
         // связь с таблицей заказы
-        [JsonIgnore]
+        //[JsonIgnore]
         public Order? Order { get; set; }
         public override string ToString()
         {

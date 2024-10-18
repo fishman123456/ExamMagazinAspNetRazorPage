@@ -18,7 +18,7 @@ namespace ExamMagazinAspNetRazorPage.Models
         [Column("ClientOrder_f")]
         public string Client { get; set; }
 
-        [JsonIgnore]
+        //[JsonIgnore]
         public ICollection<OrderProduct>? OrderProducts { get; set; }
         public Order()
         {

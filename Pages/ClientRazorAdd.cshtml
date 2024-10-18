@@ -1,0 +1,33 @@
+﻿@page
+@model ExamMagazinAspNetRazorPage.Pages.ClientRazorAddModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Список клиентов</title>
+</head>
+<body>
+    <h1>редактировать запись</h1>
+    <!--форма добавления нового элемента-->
+    <form method="post">
+        <label for="Id">ID:</label>
+        <input id="id" name="id" type="number" readonly required />
+        <!--Имя клиента-->
+        <label for="clientName">Имя клиента: </label>
+        <input id="ClientName" name="ClientName" type="text" minlenght="3" required value="@Model.clients.Name" />
+        <!--Фамилия клиента-->
+        <label for="clientLastName">Фамилия клиента: </label>
+        <input id="ClientLastName" name="ClientLastName" type="text" minlenght="3" required value="@Model.clients.LastName" />
+        <!--Почта клиента-->
+        <label for="clientEmail"> клиента: </label>
+        <input id="ClientEmail" name="ClientEmail" type="text" minlenght="3" required value="@Model.clients.Email" />
+        <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
+        <!--кнопка отправки формы-->
+        <button>save</button>
+    </form>
+    <p><a xref="/ClientRazor">Клиенты</a></p>
+</body>

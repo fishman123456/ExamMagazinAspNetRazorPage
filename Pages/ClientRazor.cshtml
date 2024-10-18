@@ -29,14 +29,14 @@
 <body>
 
     <h1>Список клиенто только для администратора</h1>
-    <p><a asp-page="добавить пользователя">Добавить нового пользователя</a></p>
     <table class="element-table">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Имя</th>
                 <th>Фамилия</th>
-
+                <th>почтовый ящик</th>
+                <th>заказ</th>
                 <th>Действие</th>
             </tr>
         </thead>
@@ -47,6 +47,8 @@
                     <td>@element.Id</td>
                     <td>@element.Name</td>
                     <td>@element.LastName</td>
+                    <td>@element.Email</td>
+                    <td>@element.Order</td>
                     <td>
                         <a asp-page="ElectricalElementDelete" asp-route-id="@element.Id">Delete</a>
                         <a asp-page="ElectricalElementEditForm" asp-route-id="@element.Id">Edit</a>
