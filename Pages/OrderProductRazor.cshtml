@@ -1,0 +1,60 @@
+﻿@page
+@using ExamMagazinAspNetRazorPage.Models
+@model ExamMagazinAspNetRazorPage.Pages.OrderProductRazorModel
+@{
+}
+<p>вы на странице заказы - продукты</p>
+<a href="/Index">Стартовая страница</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Список клиентов</title>
+    <style>
+        .element-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            .element-table th, .element-table td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+
+    <h1>Список клиенто только для администратора</h1>
+    <p><a asp-page="добавить пользователя">Добавить нового пользователя</a></p>
+    <table class="element-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>заказ</th>
+                <th>продукт</th>
+                <th>количество</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (OrderProduct orderProduct  in Model.orderProducts)
+            {
+                <tr>
+                    <td>@orderProduct.Id</td>
+                    <td>@orderProduct.Order</td>
+                    <td>@orderProduct.Product</td>
+                    <td>@orderProduct.Quantity</td>
+                    
+                    <td>
+                        <a asp-page="ElectricalElementDelete" asp-route-id="">Delete</a>
+                        <a asp-page="ElectricalElementEditForm" asp-route-id="">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

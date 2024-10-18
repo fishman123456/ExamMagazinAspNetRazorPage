@@ -7,6 +7,7 @@ namespace ExamMagazinAspNetRazorPage.Storage
     public class RdbClientService : IClientService
     {
         private readonly ApplicationDbContext _db;
+
         public RdbClientService(ApplicationDbContext db)
         {
             _db = db;

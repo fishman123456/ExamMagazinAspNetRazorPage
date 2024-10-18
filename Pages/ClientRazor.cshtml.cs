@@ -1,16 +1,16 @@
 using ExamMagazinAspNetRazorPage.Models;
-using ExamMagazinAspNetRazorPage.Service;
+using ExamMagazinAspNetRazorPage.Storage;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ExamMagazinAspNetRazorPage.Storage;
 
 namespace ExamMagazinAspNetRazorPage.Pages
 {
-    public class IndexModel : PageModel
+    public class ClientRazorModel : PageModel
     {
+
         private readonly ApplicationDbContext _db;
         public List<Client> clients { get; private set; } = new();
-        public IndexModel(ApplicationDbContext db)
+        public ClientRazorModel(ApplicationDbContext db)
         {
             _db = db;
         }

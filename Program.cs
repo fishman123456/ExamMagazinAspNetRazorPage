@@ -17,20 +17,20 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 // для Views до 18-10-2024
 // Configure the HTTP request pipeline.
-/*if (!app.Environment.IsDevelopment())
+if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
-app.UseStaticFiles();
+//app.UseStaticFiles();
 app.UseRouting();
-app.UseAuthorization();
+//app.UseAuthorization();
 app.MapControllers();
 
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-*/
+
 // для Razor после 18-10-2024
 app.MapRazorPages();
 app.Run();
