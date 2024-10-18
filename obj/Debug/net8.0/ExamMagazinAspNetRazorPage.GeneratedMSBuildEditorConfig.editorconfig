@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Fishman\Documents\GitHub\ExamMagazinAspNetRazorPage
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
