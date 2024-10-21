@@ -5,13 +5,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ExamMagazinAspNetRazorPage.Pages
 {
+    [IgnoreAntiforgeryToken(Order = 2000)]
     public class ClientRazorAddModel : PageModel
     {
         private readonly ApplicationDbContext _db;
 
         [BindProperty]
         public Client clients { get; set; } = new();
-        public Order orders { get; private set; } = new();
+      
         public ClientRazorAddModel(ApplicationDbContext db)
         {
             _db = db;
