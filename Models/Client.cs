@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -6,6 +7,7 @@ using System.Text.Json.Serialization;
 namespace ExamMagazinAspNetRazorPage.Models
 {
     [Index(nameof(Email), IsUnique = true)]
+    [IgnoreAntiforgeryToken(Order = 2000)]
     public class Client
     {
         [Column("IdClient_f")]
