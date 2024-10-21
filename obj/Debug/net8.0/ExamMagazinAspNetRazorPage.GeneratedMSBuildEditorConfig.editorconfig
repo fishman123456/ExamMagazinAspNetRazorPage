@@ -9,63 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExamMagazinAspNetRazorPage
 build_property.RootNamespace = ExamMagazinAspNetRazorPage
-build_property.ProjectDir = C:\Users\Fishman\Documents\GitHub\ExamMagazinAspNetRazorPage\
+build_property.ProjectDir = D:\Github\ExamMagazinAspNetRazorPage\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Fishman\Documents\GitHub\ExamMagazinAspNetRazorPage
+build_property.MSBuildProjectDirectory = D:\Github\ExamMagazinAspNetRazorPage
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/ClientRazor.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/ClientRazor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UmF6b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/ClientRazorAdd.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/ClientRazorAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UmF6b3JBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/Index.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/OrderProductRazor.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/OrderProductRazor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJQcm9kdWN0UmF6b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/OrderRazor.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/OrderRazor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJSYXpvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/ProductRazor.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Pages/ProductRazor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFJhem9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Home/Index.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Home/Privacy.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Shared/Error.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/_ViewImports.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/_ViewStart.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Views/Shared/_Layout.cshtml]
+[D:/Github/ExamMagazinAspNetRazorPage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-id6y735t4f
