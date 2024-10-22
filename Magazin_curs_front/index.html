@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин электротехнических изделий кабельная продукция</h1>
+        <div class="cart">
+            Корзина: <span id="cart-count">0</span> товаров
+        </div>
+        <a href="autorization.html">Перейти на страницу регистрации</a>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="product">
+                <div class="img-div">
+                <h2>Кабель силовой ВВГ-Пнг(А)-LS 3х2.5 (N,PE)-0.660 плоский однопроволочный</h2>
+                <p class="left">Цена: 68.30 ₽/м</p>
+                <img src="images/keks.jpg" alt="Рыжий кот Кекс лежит у ноутбука." width="500" height="300">
+            </div>
+            <button onclick="addToCart('Кабель силовой ВВГ-Пнг(А)-LS 3х2.5 (N,PE)-0.660 плоский однопроволочный')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>Кабель силовой ВВГнг(А)-LS 5х1,5ок(N,PE)-0,66 бухта 100м</h2>
+                <p>Цена: 128.89 ₽/м</p>
+                <button onclick="addToCart('Кабель силовой ВВГнг(А)-LS 5х1,5ок(N,PE)-0,66 бухта 100м')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>Кабель силовой ВВГнг(А)-LS 5х16 (N. PE) -0.660 однопроволочный</h2>
+                <p>Цена: 1136.51 ₽/м</p>
+                <button onclick="addToCart('Кабель силовой ВВГнг(А)-LS 5х16 (N. PE) -0.660 однопроволочный')">Добавить в корзину</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

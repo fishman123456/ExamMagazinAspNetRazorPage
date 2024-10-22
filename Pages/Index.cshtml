@@ -2,11 +2,80 @@
 @model ExamMagazinAspNetRazorPage.Pages.IndexModel
 @using ExamMagazinAspNetRazorPage
 @using ExamMagazinAspNetRazorPage.Models
+@using ExamMagazinAspNetRazorPage.Pages
 @addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
 }
-<p><a asp-page="/ClientRazor">Клиенты</a></p>
-<p><a asp-page="/ClientRazorAdd">Добавить клиента</a></p>
-<p><a asp-page="/OrderProductRazor">Заказы-продукты</a></p>
-<p><a asp-page="/ProductRazor">Продукты</a></p>
-<p><a asp-page="/OrderRazor">Заказы</a></p>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин электротехнических изделий кабельная продукция</h1>
+        <div class="cart">
+            Корзина: <span id="cart-count">0</span> товаров
+        </div>
+        <p><a asp-page="/IndexAdmin">Администрирование</a></p>
+
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="product">
+                <div class="img-div">
+                    <h2>Кабель силовой ВВГ-Пнг(А)-LS 3х2.5 (N,PE)-0.660 плоский однопроволочный</h2>
+                    <p class="left">Цена: 68.30 ₽/м</p>
+                </div>
+                <button onclick="addToCart('Кабель силовой ВВГ-Пнг(А)-LS 3х2.5 (N,PE)-0.660 плоский однопроволочный')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>Кабель силовой ВВГнг(А)-LS 5х1,5ок(N,PE)-0,66 бухта 100м</h2>
+                <p>Цена: 128.89 ₽/м</p>
+                <button onclick="addToCart('Кабель силовой ВВГнг(А)-LS 5х1,5ок(N,PE)-0,66 бухта 100м')">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h2>Кабель силовой ВВГнг(А)-LS 5х16 (N. PE) -0.660 однопроволочный</h2>
+                <p>Цена: 1136.51 ₽/м</p>
+                <button onclick="addToCart('Кабель силовой ВВГнг(А)-LS 5х16 (N. PE) -0.660 однопроволочный')">Добавить в корзину</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // добавление продукта в корзину
+        let cartCount = 0;
+
+        function addToCart(productName) {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            alert(productName + ' добавлен в корзину!');
+        }
+
+        // регистрация администратора
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const messageElement = document.getElementById('message');
+
+            // Проверка логина и пароля 
+            if (username === 'user' && password === 'password') {
+                messageElement.style.color = 'green';
+                messageElement.textContent = 'Успешный вход!';
+                // Если неправильный пароль то ....
+            } else {
+                messageElement.style.color = 'red';
+                messageElement.textContent = 'Неверный логин или пароль.';
+            }
+        });
+    </script>
+</body>
+</html>
+

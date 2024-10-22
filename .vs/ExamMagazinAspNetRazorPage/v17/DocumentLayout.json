@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\pages\\indexadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:pages\\indexadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\pages\\indexadmin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:pages\\indexadmin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|c:\\users\\fishman\\documents\\github\\exammagazinaspnetrazorpage\\pages\\clientrazor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BC0E9D07-AB25-4916-B6E0-03C14255052A}|ExamMagazinAspNetRazorPage.csproj|solutionrelative:pages\\clientrazor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 253,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +90,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexAdmin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\IndexAdmin.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\IndexAdmin.cshtml.cs",
+              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\IndexAdmin.cshtml.cs",
+              "RelativeToolTip": "Pages\\IndexAdmin.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T08:01:08.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T08:29:29.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndexAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\IndexAdmin.cshtml",
+              "RelativeDocumentMoniker": "Pages\\IndexAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\IndexAdmin.cshtml",
+              "RelativeToolTip": "Pages\\IndexAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-22T07:16:50.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ClientRazor.cshtml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\ClientRazor.cshtml",
               "RelativeDocumentMoniker": "Pages\\ClientRazor.cshtml",
@@ -103,12 +137,11 @@
               "RelativeToolTip": "Pages\\ClientRazor.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T06:37:47.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:37:47.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OrderProductRazor.cshtml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\OrderProductRazor.cshtml",
               "RelativeDocumentMoniker": "Pages\\OrderProductRazor.cshtml",
@@ -116,12 +149,11 @@
               "RelativeToolTip": "Pages\\OrderProductRazor.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T06:13:37.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T06:13:37.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "OrderProductRazor.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\OrderProductRazor.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\OrderProductRazor.cshtml.cs",
@@ -133,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrderRazorDelete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\OrderRazorDelete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\OrderRazorDelete.cshtml.cs",
@@ -146,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "OrderRazor.cshtml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\OrderRazor.cshtml",
               "RelativeDocumentMoniker": "Pages\\OrderRazor.cshtml",
@@ -158,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "OrderRazorEdit.cshtml",
               "DocumentMoniker": "C:\\Users\\Fishman\\Documents\\GitHub\\ExamMagazinAspNetRazorPage\\Pages\\OrderRazorEdit.cshtml",
               "RelativeDocumentMoniker": "Pages\\OrderRazorEdit.cshtml",
