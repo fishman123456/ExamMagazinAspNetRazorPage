@@ -1,0 +1,36 @@
+﻿@page
+@model ExamMagazinAspNetRazorPage.Pages.ClientRazorEditModel
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@using ExamMagazinAspNetRazorPage.Pages
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Редактирование клиента</title>
+</head>
+<body>
+    <h1>Изменение</h1>
+    <!--форма редактирования клиента-->
+    <form method="post">
+        <label for="Id">ID:</label>
+        <input id="id" name="id" type="number" readonly required value="@Model.Client.Id" />
+        <!--Имя клиента-->
+        <label for="nameClient">Имя клиента: </label>
+        <input id="NameClient" name="Name" type="text" minlenght="1" required value="@Model.Client.Name" />
+        <!--Фамилия клиента-->
+        <label for="lastNameClient">Фамилия клиента: </label>
+        <input id="LastNameClient" name="LastName" type="text" minlenght="1" required value="@Model.Client.LastName" />
+        <!--почта клиента-->
+        <label for="postClient">Почтовый ящик: </label>
+        <input id="PostClient" name="Email" type="text" minlenght="1" required value="@Model.Client.Email" />
+
+        <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
+        <!--кнопка отправки формы-->
+        <button>save</button>
+    </form>
+    <p> <a asp-page="ClientRazor"> перейти на таблицу клиентов</a></p>
+</body>
