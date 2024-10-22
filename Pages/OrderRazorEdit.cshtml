@@ -1,0 +1,36 @@
+﻿@page
+@model ExamMagazinAspNetRazorPage.Pages.OrderRazorEditModel
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@using ExamMagazinAspNetRazorPage.Pages
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Редактирование клиента</title>
+</head>
+<body>
+    <h1>Изменение</h1>
+    <!--форма редактирования заказа-->
+    <form method="post">
+        <label for="Id">ID:</label>
+        <input id="id" name="id" type="number" readonly required value="@Model.Order.Id" />
+        <!--Код заказа-->
+        <label for="codeOrder">Код заказа: </label>
+        <input id="codeOrder" name="CodeOrder" type="text" minlenght="1" required value="@Model.Order.СodeOrder" />
+        <!--Дата создания заказа-->
+        <label for="creatationDate">Дата создания заказа: </label>
+        <input id="CreatationDate" name="CreatationDate" type="text" minlenght="1" required value="@Model.Order.CreatationDate" />
+        <!--Id клиента сделал заказ-->
+        <label for="Client">Id клиента сделал заказ: </label>
+        <input id="Client" name="Client" type="text" minlenght="1" required value="@Model.Order.Client" />
+
+        <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
+        <!--кнопка отправки формы-->
+        <button>save</button>
+    </form>
+    <p> <a asp-page="OrderRazor"> перейти на таблицу заказов</a></p>
+</body>

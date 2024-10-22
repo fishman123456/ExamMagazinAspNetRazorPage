@@ -11,10 +11,16 @@ namespace ExamMagazinAspNetRazorPage.Models
     {
         [Column("IdOrder_f")]
         public int Id { get; set; }
+
+        // код заказа
         [Column("СodeOrder_f")]
         public string СodeOrder { get; set; }
+
+        // дата создания заказа
         [Column("CreatationDate")]
         public DateTime CreatationDate { get; set; } = DateTime.Now;
+
+        // Id клиета сделал заказ
         [Column("ClientOrder_f")]
         public string Client { get; set; }
 

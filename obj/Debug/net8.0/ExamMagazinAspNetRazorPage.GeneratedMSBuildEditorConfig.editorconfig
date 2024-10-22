@@ -54,6 +54,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJSYXpvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/OrderRazorAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJSYXpvckFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/OrderRazorDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJSYXpvckRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/OrderRazorEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJSYXpvckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fishman/Documents/GitHub/ExamMagazinAspNetRazorPage/Pages/ProductRazor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFJhem9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
