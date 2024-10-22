@@ -52,6 +52,7 @@
                     <td>@client.Email</td>
                     <td>@client.Order</td>
                     <td>
+                        <a asp-page="/ClientRazorAdd" asp-route-id="@client.Id">Add</a>
                         <a asp-page="/ClientRazorDelete" asp-route-id="@client.Id">Delete</a>
                         <a asp-page="/ClientRazorEdit" asp-route-id="@client.Id">Edit</a>
                     </td>

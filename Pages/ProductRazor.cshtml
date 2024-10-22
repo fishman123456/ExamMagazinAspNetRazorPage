@@ -1,6 +1,8 @@
 ﻿@page
 @using ExamMagazinAspNetRazorPage.Models
 @model ExamMagazinAspNetRazorPage.Pages.ProductRazorModel
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
 }
 <p>вы на странице продукты</p>
@@ -50,8 +52,9 @@
                     <td>@product.Price</td>
                     
                     <td>
-                        <a asp-page="ElectricalElementDelete" asp-route-id="">Delete</a>
-                        <a asp-page="ElectricalElementEditForm" asp-route-id="">Edit</a>
+                        <a asp-page="/ProductRazorAdd" asp-route-id="@product.Id">Add</a>
+                        <a asp-page="/ProductRazorDelete" asp-route-id="@product.Id">Delete</a>
+                        <a asp-page="/ProductRazorEdit" asp-route-id="@product.Id">Edit</a>
                     </td>
                 </tr>
             }
