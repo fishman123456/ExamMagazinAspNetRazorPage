@@ -13,7 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Онлайн-магазин</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="@(nameof(ExamMagazinAspNetRazorPage)).Index.cshtml.css">
+    <link href="Index.cshtml.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         <div class="cart">
             Корзина: <span id="cart-count">0</span> товаров
         </div>
-        <p><a asp-page="/IndexAdmin">Администрирование</a></p>
+        <p><a asp-page="/AutorizationRazor">Администрирование</a></p>
 
     </header>
 
@@ -57,24 +58,6 @@
             alert(productName + ' добавлен в корзину!');
         }
 
-        // регистрация администратора
-        document.getElementById('login-form').addEventListener('submit', function (event) {
-            event.preventDefault(); // Отменяем стандартное поведение формы
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const messageElement = document.getElementById('message');
-
-            // Проверка логина и пароля 
-            if (username === 'user' && password === 'password') {
-                messageElement.style.color = 'green';
-                messageElement.textContent = 'Успешный вход!';
-                // Если неправильный пароль то ....
-            } else {
-                messageElement.style.color = 'red';
-                messageElement.textContent = 'Неверный логин или пароль.';
-            }
-        });
     </script>
 </body>
 </html>
