@@ -53,15 +53,16 @@ main {
     }
 
     .product button {
-        padding: 10px;
+        padding: 20px;
         background-color: #28a745;
-        color: red;
+        color: Background;
         border: 20px;
         cursor: pointer;
+        width :400px
     }
 
         .product button:hover {
-            background-color: #218838;
+            background-color: skyblue;
         }
 
 .login-container {
@@ -119,5 +120,5 @@ button {
 }
 
 td {
-    min-width: 200px;
+    min-width: 20px;
 }
