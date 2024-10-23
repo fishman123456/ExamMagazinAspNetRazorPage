@@ -9,3 +9,5 @@
 
 пробуем HTML
 ![image](https://github.com/user-attachments/assets/ad597ac5-305c-4b27-8825-8547458d8589)
+23-10-2024
+![image](https://github.com/user-attachments/assets/7a1f3975-c80e-4d21-945e-a01f3e1cd25e)
