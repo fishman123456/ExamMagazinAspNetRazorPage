@@ -117,3 +117,7 @@ button {
 .left {
     text-align: left;
 }
+
+td {
+    min-width: 200px;
+}
