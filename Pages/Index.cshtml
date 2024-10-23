@@ -48,22 +48,26 @@
         </section>
     </main>
 
+    <!--Перебор продуктов из базы-->
+   <p></p>
     @foreach (var item in Model.products)
     {
+
         <tr align="center">
             <td align="center">
-                <a asp-page="cart" asp-page-handler="delete" asp-route-id="@item.Id">X</a>
+            <a asp-page="ProductRazorDelete" asp-page-handler="Async" asp-route-id="@item.Id">X</a>
             </td>
             <td>| Id товара - @item.Id |</td>
             <td>  Порядковый номер товара - @item.Number |</td>
-            <td>  Имя товара - @item.Name |</td>
+            <td id="products" class="product">  Имя товара - @item.Name |</td>
             <td>  Цена за ед.товара - @item.Price |</td>
             <td>  Кол-во ед.товара - @item.Quantity |</td>
-            <td>  Общая цена товара - @(item.Price * item.Quantity) |
-
+                <!--<td>  Общая цена товара - @(item.Price * item.Quantity) |-->
         </tr>
+        <button onclick="addToCart('@item.Name.ToString()')">Добавить в корзину</button>
         <p></p>
     }
+
     <script>
         // добавление продукта в корзину
         let cartCount = 0;
