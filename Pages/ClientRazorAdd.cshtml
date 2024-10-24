@@ -18,18 +18,22 @@
     <form method="post">
         <label for="Id">ID:</label>
         <input id="id" name="Id" type="number" readonly required />
+        <p></p>
         <!--Имя клиента-->
         <label for="clientName">Имя клиента: </label>
         <input id="ClientName" name="Name" type="text" minlenght="3" required value="@Model.clients.Name" />
+        <p></p>
         <!--Фамилия клиента-->
         <label for="clientLastName">Фамилия клиента: </label>
         <input id="ClientLastName" name="LastName" type="text" minlenght="3" required value="@Model.clients.LastName" />
+        <p></p>
         <!--Почта клиента-->
         <label for="clientEmail">Почта клиента: </label>
         <input id="ClientEmail" name="Email" type="text" minlenght="3" required value="@Model.clients.Email" />
+        <p></p>
         <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
         <!--кнопка отправки формы-->
         <button>save</button>
     </form>
-    <p><a xref="/ClientRazor">Клиенты</a></p>
+    <a asp-page="/ClientRazor">На страницу список клиентов</a>
 </body>

@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section id="products">
+        
             <div class="product">
                     <h2>Кабель силовой ВВГ-Пнг(А)-LS 3х2.5 (N,PE)-0.660 плоский однопроволочный</h2>
                     <p>Цена: 68.30 ₽/м</p>
@@ -45,7 +45,7 @@
                 <p>Цена: 1136.51 ₽/м</p>
                 <button onclick="addToCart('Кабель силовой ВВГнг(А)-LS 5х16 (N. PE) -0.660 однопроволочный')">Добавить в корзину</button>
             </div>
-        </section>
+       
     </main>
 
     <!--Перебор продуктов из базы-->
@@ -53,7 +53,7 @@
     @foreach (var item in Model.products)
     {
         <div class="product">
-        <tr align="center">
+        <tr>
             <td align="center">
             <a asp-page="ProductRazorDelete" asp-page-handler="Async" asp-route-id="@item.Id"></a>
             </td>
@@ -61,12 +61,14 @@
             <td>  Порядковый номер товара - @item.Number |</td>
                 <td id="products"> <h2> Имя товара - @item.Name </h2></td>
             <td>  Цена за ед.товара - @item.Price |</td>
+               
             <td>  Кол-во ед.товара - @item.Quantity |</td>
                 <!--<td>  Общая цена товара - @(item.Price * item.Quantity) |-->
         </tr>
+            <p></p>
         <button onclick="addToCart('@item.Name.ToString()')">Добавить в корзину</button>
         </div>
-        <p></p>
+       
     }
 
     <script>

@@ -19,16 +19,19 @@
     <form method="post">
         <label for="Id">ID:</label>
         <input id="id" name="id" type="number" readonly required value="@Model.order.Id" />
+        <p></p>
         <!--Код заказа-->
         <label for="codeOrder">Код заказа: </label>
         <input id="CodeOrder" name="CodeOrder" type="text" minlenght="1" required value="@Model.order.СodeOrder" />
+        <p></p>
         <!--Дата создания заказа-->
         <label for="creatationDate">Дата создания заказа: </label>
         <input id="CreatationDate" name="CreatationDate" type="text" minlenght="1" required value="@Model.order.CreatationDate" />
+        <p></p>
         <!--Id клиента сделал заказ-->
         <label for="Client">Id клиента сделал заказ: </label>
         <input id="Client" name="Client" type="text" minlenght="1" required value="@Model.order.Client" />
-
+        <p></p>
         <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
         <!--кнопка отправки формы-->
         <button>save</button>

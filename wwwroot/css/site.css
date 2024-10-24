@@ -44,12 +44,12 @@ main {
 .product {
     border: 1px solid #ccc;
     padding: 15px;
-    margin: 10px 0;
+    margin: 60px;
     border-radius: 5px;
 }
 
     .product h2 {
-        margin: 0 0 10px;
+        margin: 10px 10px 10px;
     }
 
     .product button {
@@ -120,5 +120,9 @@ button {
 }
 
 td {
+    min-width: 20px;
+}
+tr {
+    margin: 20px;
     min-width: 20px;
 }

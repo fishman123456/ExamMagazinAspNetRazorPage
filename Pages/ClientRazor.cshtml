@@ -31,6 +31,7 @@
 <body>
 
     <h1>Список клиентов только для администратора</h1>
+    <a asp-page="/ClientRazorAdd">Добавить клиента</a>
     <table class="element-table">
         <thead>
             <tr>
@@ -45,6 +46,7 @@
         <tbody>
             @foreach (Client client in Model.clients)
             {
+                
                 <tr>
                     <td>@client.Id</td>
                     <td>@client.Name</td>
@@ -52,7 +54,6 @@
                     <td>@client.Email</td>
                     <td>@client.Order</td>
                     <td>
-                        <a asp-page="/ClientRazorAdd" asp-route-id="@client.Id">Add</a>
                         <a asp-page="/ClientRazorDelete" asp-route-id="@client.Id">Delete</a>
                         <a asp-page="/ClientRazorEdit" asp-route-id="@client.Id">Edit</a>
                     </td>

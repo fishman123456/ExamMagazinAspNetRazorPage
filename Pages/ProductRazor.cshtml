@@ -29,6 +29,7 @@
 <body>
 
     <h1>Список заказов только для администратора</h1>
+    <a asp-page="/ProductRazorAdd" >Добавить товар</a>
 
     <table class="element-table">
         <thead>
@@ -52,7 +53,7 @@
                     <td>@product.Price</td>
                     
                     <td>
-                        <a asp-page="/ProductRazorAdd" asp-route-id="@product.Id">Add</a>
+                       
                         <a asp-page="/ProductRazorDelete" asp-route-id="@product.Id">Delete</a>
                         <a asp-page="/ProductRazorEdit" asp-route-id="@product.Id">Edit</a>
                     </td>

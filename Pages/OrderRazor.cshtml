@@ -29,7 +29,8 @@
 </head>
 <body>
 
-    <h1>Список заказов только для администратора</h1>   
+    <h1>Список заказов только для администратора</h1>
+    <a asp-page="OrderRazorAdd">Добавить заказ</a>
     <table class="element-table">
         <thead>
             <tr>
@@ -51,7 +52,7 @@
                     <td>@order.Client</td>
                     <td>@order.CreatationDate</td>
                     <td>
-                        <a asp-page="OrderRazorAdd" asp-route-id="">Add</a>
+                       
                         <a asp-page="OrderRazorDelete" asp-route-id="">Delete</a>
                         <a asp-page="OrderRazorEdit" asp-route-id="">Edit</a>
                     </td>

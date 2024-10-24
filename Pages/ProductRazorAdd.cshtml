@@ -10,29 +10,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Список продуктов</title>
+    <title>Список товаров</title>
 </head>
 <body>
-    <h1>редактировать запись</h1>
+    <h1>добавить запись</h1>
     <!--форма добавления нового элемента-->
     <form method="post">
         <label for="Id">ID:</label>
         <input id="id" name="id" type="number" readonly required value="@Model.Product.Id" />
+        <p></p>
         <!--номер продукта-->
         <label for="numberProduct">Номер продукта: </label>
         <input id="NumberProduct" name="Number" type="text" minlenght="1" required value="@Model.Product.Number" />
+        <p></p>
         <!--имя товара-->
         <label for="nameProduct">Имя продукта: </label>
-        <input id="NameProduct" name="Name" type="text" minlenght="1" required value="@Model.Product.Name" />
+        <input id="NameProduct" size="100" name="Name" type="text" minlenght="1" required value="@Model.Product.Name" />
+        <p></p>
         <!--количество товара-->
         <label for="quantityProduct">Кол-во товара: </label>
         <input id="QuantityProduct" name="Quantity" type="text" minlenght="1" required value="@Model.Product.Quantity" />
+        <p></p>
         <!-- цена за еденицу товара-->
         <label for="priceProduct">Цена за ед.товара: </label>
         <input id="PriceProduct" name="Price" type="text" minlenght="1" required value="@Model.Product.Price" />
         <!-- https://livebook.manning.com/book/asp-net-core-razor-pages-in-action/chapter-6/v-8/53-->
+        <p></p>
         <!--кнопка отправки формы-->
         <button>save</button>
     </form>
-    <p><a xref="/ProductRazor">Клиенты</a></p>
+    <a asp-page="/ProductRazor">Перейти таблица товаров</a>
 </body>
