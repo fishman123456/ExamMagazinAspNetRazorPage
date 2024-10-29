@@ -23,6 +23,7 @@
         <h1 align="center">Магазин электротехнических изделий кабельная продукция</h1>
         <div class="cart">
             Корзина: <span id="cart-count">0</span> товаров
+            <p>Id товара </p>
         </div>
         <p><a asp-page="/AutorizationRazor">Администрирование</a></p>
 
@@ -66,9 +67,11 @@
                 <!--<td>  Общая цена товара - @(item.Price * item.Quantity) |-->
         </tr>
             <p></p>
-        <button onclick="addToCart('@item.Name.ToString()')">Добавить в корзину</button>
+        <button onclick="addToCart('@item.Name.ToString()')">Добавить в корзину
+              ID = @item.Id.ToString()
+        </button>
         </div>
-       
+       <p></p>
     }
 
     <script>

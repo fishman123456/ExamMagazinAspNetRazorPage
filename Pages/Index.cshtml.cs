@@ -9,6 +9,7 @@ namespace ExamMagazinAspNetRazorPage.Pages
     {
 
         private readonly ApplicationDbContext _db;
+        public List<string> basket = new List<string>();
         public List<Product> products { get; private set; } = new();
         public IndexModel(ApplicationDbContext db)
         {
@@ -17,6 +18,7 @@ namespace ExamMagazinAspNetRazorPage.Pages
         public void OnGet(string name)
         {
             products = _db.Products_t.ToList();
+            string str = basket.ToString();
         }
     }
 }
